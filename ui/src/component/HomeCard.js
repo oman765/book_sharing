@@ -15,7 +15,7 @@ const HomeCard = ({ name, image, category, price, loading,id }) => {
           </h3>
           <p className="text-center text-slate-500  font-medium">{category}</p>
           <p className="text-center font-bold">
-            <span className="text-red-500">₹</span>
+            <span className="text-red-500">Tk</span>
             <span>{price}</span>
           </p>
           </Link>
