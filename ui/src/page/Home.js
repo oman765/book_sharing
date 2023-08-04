@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { GrNext, GrPrevious } from "react-icons/gr";
 import { useSelector } from "react-redux";
 import AllProduct from "../component/AllProduct";
 import CardFeature from "../component/CardFeature";
@@ -83,13 +82,13 @@ const Home = () => {
               onClick={preveProduct}
               className="bg-slate-300 hover:bg-slate-400 text-lg  p-1 rounded"
             >
-              <GrPrevious />
+             
             </button>
             <button
               onClick={nextProduct}
               className="bg-slate-300 hover:bg-slate-400 text-lg p-1 rounded "
             >
-              <GrNext />
+             
             </button>
           </div>
         </div>
