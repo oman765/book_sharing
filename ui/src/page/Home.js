@@ -10,7 +10,7 @@ const Home = () => {
   const productData = useSelector((state) => state.product.productList);
   const homeProductCartList = productData.slice(1, 5);
   const homeProductCartListCse = productData.filter(
-    (el) => el.category === "cse || 1 ",
+    (el) => el.category === "cse" || 1 ,
     []
   );
   const loadingArray = new Array(4).fill(null);
