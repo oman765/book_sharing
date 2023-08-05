@@ -108,7 +108,7 @@ const Newproduct = () => {
         <label htmlFor='price' className='my-1'>Price</label>
         <input type={"text"} className='bg-slate-200 p-1 my-1' name='price' onChange={handleOnChange} value={data.price}/>
 
-        <label htmlFor='description'>Description</label>
+        <label htmlFor='description'>Description and Contact Number/Email</label>
         <textarea rows={2} value={data.description} className='bg-slate-200 p-1 my-1 resize-none' name='description' onChange={handleOnChange}></textarea>
 
         <button className='bg-red-500 hover:bg-red-600 text-white text-lg font-medium my-2 drop-shadow'>Save</button>
