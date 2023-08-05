@@ -10,7 +10,7 @@ const Home = () => {
   const productData = useSelector((state) => state.product.productList);
   const homeProductCartList = productData.slice(1, 5);
   const homeProductCartListCse = productData.filter(
-    (el) => el.category === "cse",
+    (el) => el.category === "cse || 1 ",
     []
   );
   const loadingArray = new Array(4).fill(null);
@@ -101,7 +101,7 @@ const Home = () => {
             ? homeProductCartListCse.map((el) => {
                 return (
                   <CardFeature
-                    key={el._id+"vegetable"}
+                    key={el._id+"cse"}
                     id={el._id}
                     name={el.name}
                     category={el.category}
