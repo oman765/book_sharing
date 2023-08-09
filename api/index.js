@@ -5,10 +5,10 @@ const app=express();
 const dotenv = require("dotenv").config();
 app.use(express.json({limit : "10mb"}))
 app.use(cors())
-//const Stripe = require('stripe')
+
 const PORT=process.env.PORT || 8080
 // mongodb connection
-mongoose.set("strictQuery", false);
+
 mongoose
   .connect(process.env.MONGODB_URL)
   .then(() => console.log("Connect to Databse"))
@@ -36,20 +36,7 @@ const userSchema = mongoose.Schema({
 app.get("/",(req,res)=>{
     res.send("surver is running")
 })
-// app.post ("/signup",(req,res)=>{
-//      // console.log(req.body);
-//   const { email } = req.body;
-//   userModel.findOne({ email: email })
-//     // console.log(result);
-//    // console.log(err);
-//     if (result) {
-//       res.send({ message: "Email id is already register", alert: false });
-//     } else {
-//       const data = userModel(req.body);
-//       const save = data.save();
-//       res.send({ message: "Successfully sign up", alert: true });
-//     }
-// });
+
 
 
 
