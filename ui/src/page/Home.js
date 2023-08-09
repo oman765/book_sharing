@@ -42,14 +42,10 @@ const Home = () => {
           </h2>
           <p className="py-3 text-base ">
            Thi is a cuet base book sharing paltform.Share your Old book enlighten our community
-           Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries
+           This platforms provide a community-driven approach to accessing and enjoying reading materials.
           </p>
           <button className="font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md">
-            Order Now
+           Get Book
           </button>
         </div>
 
